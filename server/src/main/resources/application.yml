@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: kafka-test-server
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kafka_test
+    username: postgres
+    password: postgres
+
+  flyway:
+    enabled: true
+
